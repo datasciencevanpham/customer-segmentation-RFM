@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run streamlit_customer_segmentation_PhamThanhVan.py
