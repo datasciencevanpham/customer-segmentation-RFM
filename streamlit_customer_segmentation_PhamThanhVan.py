@@ -30,20 +30,12 @@ st.title("Data Science - Project 1")
 st.write("## Customer Segmentation")
 # Upload file
 
+from io import BytesIO
+
 uploaded_file = st.file_uploader("Choose a file", type=['txt'])
 if uploaded_file is not None:
-    # data = uploaded_file.read().decode('utf-8')
-    # data = StringIO(data)
-    # df = pd.read_csv(data, sep='\t', header=None, names=['customer_ID', 'purchase_date', 'CD_number', 'total_amount'])
-    # df.to_csv("CDNOW_master_new.csv", index=False)
-    filename = uploaded_file.name
-    with open(filename, 'r') as f:
-    # with open(uploaded_file, 'r') as f:
-        raw_data = f.readlines()
-        data = []
-        for line in raw_data:
-            data.append([l for l in line.strip().split(' ') if l !=''])
-    df = pd.DataFrame(data)
+    file = BytesIO(uploaded_file.read())
+    df = pd.read_fwf(file)
     df.to_csv("CDNOW_master_new.csv", index=False)
 
 # 2. Data pre-processing
