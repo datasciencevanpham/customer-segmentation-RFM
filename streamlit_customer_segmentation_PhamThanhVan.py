@@ -195,6 +195,7 @@ if choice == 'Business Objectives':
     ###### RFM stands for recency, frequency, and monetary value. The idea is to segment customers based on when their last purchase was, how often they've purchased in the past, and how much they've spent overall.
     """)  
     st.write("""###### => Problem/ Requirement: Use RFM Analysis in Python for Customer Segmentation.""")
+    st.write("The file CDNOW master.txt contains the entire purchase history up to the end of June 1998 of the cohort of 23,570 individuals who made their first-ever purchase at CDNOW in the first quarter of 1997. (See Fader and Hardie (2001a) for further details of this dataset.) Each record in this file, 69,659 in total, comprises four fields: the customer’s ID, the date of the transaction, the number of CDs purchased, and the dollar value of the transaction")
     st.image("RFM1.png")
     st.image("RFM2.jpg")
 
