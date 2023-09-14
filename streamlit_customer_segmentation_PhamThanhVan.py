@@ -9,7 +9,7 @@ from datetime import datetime
 import scipy
 import scipy.stats
 
-from io import StringIO
+# from io import StringIO
 
 # import pickle
 import streamlit as st
@@ -17,14 +17,14 @@ import plotly.express as px
 # import os
 
 import base64
-import time
-import uuid
+# import time
+# import uuid
 from streamlit_extras.dataframe_explorer import dataframe_explorer
 
 from myfunctions import *
 
-import pdfkit
-import tempfile
+# import pdfkit
+# import tempfile
 
 # https://docs.streamlit.io/library/changelog?highlight=SessionState#version-0-54-0
 # import SessionState
@@ -49,8 +49,8 @@ st.title("Data Science - Project 1")
 st.write("## Customer Segmentation")
 # Upload file
 
-from io import BytesIO
-from myfunctions import upload_file
+# from io import BytesIO
+# from myfunctions import upload_file
 
 st.write("You can change the dataset in 'Build Project' by uploading your new dataset below.")
 uploaded_file = st.file_uploader("Choose a file", type=['txt', 'csv'],  key="uploaded_file")
