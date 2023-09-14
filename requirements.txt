@@ -8,3 +8,6 @@ plotly
 squarify
 scipy
 streamlit_extras
+uuid
+time
+base64
