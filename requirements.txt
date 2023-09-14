@@ -7,4 +7,4 @@ scikit-learn
 plotly
 squarify
 scipy
-streamlit_extras
+streamlit-extras
