@@ -8,4 +8,3 @@ plotly
 squarify
 scipy
 streamlit_extras
-base64
