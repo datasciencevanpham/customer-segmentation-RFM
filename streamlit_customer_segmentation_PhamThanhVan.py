@@ -83,7 +83,7 @@ if uploaded_file is not None:
 
 
 st.write("There are {} rows and {} columns in the dataset.".format(df.shape[0], df.shape[1]))
-st.write("(Tất cả nhận xét là tự động, bạn có thể xem report mới trong 'Build Project' khi thêm dataset mới tương tự vào 'Build Project'.)")
+st.write("(Tất cả nhận xét là tự động, bạn có thể xem report mới trong 'Build Project' khi thêm dataset mới tương tự vào 'Build Project').")
 
 # 2. Data pre-processing
 # Đổi tên cột
